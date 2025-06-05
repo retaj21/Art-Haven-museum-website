@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+     
+        .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgba(94, 93, 93, 0.9),
+         1px -1px 0  rgba(94, 93, 93, 0.9),
+        -1px  1px 0 rgba(94, 93, 93, 0.9),
+         1px  1px 0 rgba(94, 93, 93, 0.9);
+   
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgba(94, 93, 93, 0.9),
+         1px -1px 0 rgba(94, 93, 93, 0.9),
+        -1px  1px 0 rgba(94, 93, 93, 0.9),
+         1px  1px 0 rgba(94, 93, 93, 0.9);
+   
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+    html , body{
+  margin: 0;
+   padding:0;
+      height: 100%;
+    }
+    body {
+   
+       font-family: sans-serif;
+     background-color: #080808;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+    }
+
+
+    .blog-card {
+    position: relative;
+        width: 75vw;
+      height: 75vh;
+        background-image: url("image8.jpg"); 
+      background-size: cover;
+      background-position: center;
+         border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 20px rgb(135, 98, 4);
+     
+    }
+ 
+
+
+    .blog-content {
+      position: absolute;
+      right: 0;
+         top: 0;
+      bottom: 0;
+       width: 50%;
+      background: rgba(94, 93, 93, 0.9);  
+        padding: 30px;
+      box-sizing: border-box;
+    }
+
+    .blog-content h2 {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      margin: 0 0 10px;
+    }
+ .blog-content p {
+      font-family:unset;
+      font-size: 14px;
+      color: #000000;
+    }
+
+    .blog-content small {
+      display: block;
+      margin-bottom: 10px;
+      color: #888;
+    }
+      .blog-content button{
+      margin-top: 15px;
+      padding: 10px 20px;
+       background: black;
+      color: white;
+        border: none;
+      border-radius: 25px;
+    }
+    button:hover{
+color: goldenrod;
+    }
+    
+
+
+  </style>
+
+</head>
+<body>
+     <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="aboutuspage.html"> About Us</a>
+                             <a href="homepage.html"> Home </a>
+                             <a href="servicespage.html"> Services</a>
+                             <a href="gellary.html"> Gellary</a>
+                              <a href="FAQ.html"> FAQ</a>
+                             <a href="contactuspage.html"> Contact Us</a>
+                             <a href="caseStudies.html"> Case Studies</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+                </div>
+                </div>
+     <div class="blog-card">
+    <div class="blog-content">
+      <small>Art Haven Museum</small>
+      <h2>The Art Museum’s Official Blog: Discover the Beauty Behind Every Painting</h2>
+      <small>Posted - 19 october, 2024</small>
+      <p>Art possesses a unique power to evoke deep emotions and stimulate thoughtful  reflection. 
+         Paintings communicate complex human experiences and values through colors, shapes, and 
+         compositions that transcend words. They can inspire feelings  ranging from joy and hope 
+         to melancholy and contemplation. The presence of art in daily life enriches environments  
+         by adding beauty, meaning, and cultural depth. It shapes cultural identities and fosters 
+         connections among people from different backgrounds and generations. Whether displayed in
+         public spaces, galleries, or private homes, paintings transform the atmosphere and ignite 
+          creativity in those who engage with them........ </p>
+          <button>CONTINUE READING</button>
+     
+    </div>
+  </div>
+
+ 
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+      background-color: #080808;
+        font-family:sans-serif;
+       
+        padding: 40px;
+      
+    }
+     .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+
+    .faq-container{
+        max-width: 800px;
+        margin: 50px auto 0;
+     background-color:black;
+       border-radius: 10px;
+       padding: 20px;
+        box-shadow: 0 4px 10px   rgb(182, 131, 56);
+       
+    }
+    h2{
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        color: #ffffff;
+    }
+    .faq-item{
+        color: rgb(217, 217, 217);
+        border-bottom: 1px solid #333;
+        margin-bottom: 10px;
+    }
+    .faq-item input{
+        display: none;
+    }
+    .faq-question {
+     display: block;
+     font-weight: bold;
+     padding: 15px;
+     cursor: pointer;
+     position: relative;
+     background-color:#1d1d1d;
+     border-radius: 5px;
+     transition:  0.5s ease ;
+    }
+    .faq-question::after{
+        content: '+';
+        position: absolute;
+        right: 20px;
+        font-size: 18px;
+    }
+    .faq-question:hover{
+    transform: scale(1.03);
+    }
+     .faq-item input:checked ~ .faq-question::after {
+      content: '-';
+    }
+    .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 15px;
+        transition: 0.5s ease-in-out;
+    }
+     .faq-item input:checked ~ .faq-answer {
+      max-height: 500px;
+      padding: 15px;
+    }
+</style>
+<body>
+     <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="aboutuspage.html"> About Us</a>
+                             <a href="homepage.html"> Home </a>
+                             <a href="servicespage.html"> Services</a>
+                             <a href="gellary.html"> Gellary</a>
+                              <a href="contactuspage.html">Contact Us</a>
+                             <a href="blogpage.html"> Blog</a>
+                             <a href="caseStudies.html"> Case Studies</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+            </div>
+            </div>
+    <div class="faq-container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <input type="checkbox" id="q1">
+            <label class="faq-question" for="q1">What types of paintings do you offer?</label>
+        <div class="faq-answer">We offer original abstract, modern, classical, and landscape paintings from emerging and established artists.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q2">
+            <label class="faq-question" for="q2">Can I purchase paintings online?</label>
+        <div class="faq-answer">Yes, all available artworks can be purchased securely through our website.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3">
+            <label class="faq-question" for="q3">Can I visit the museum in person?</label>
+        <div class="faq-answer">Yes! Visitors are welcome during our opening hours or by private appointment.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q4">
+            <label class="faq-question" for="q4">Do you offer international shipping?</label>
+        <div class="faq-answer">Yes, we provide safe and insured worldwide shipping with professional packaging.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q5">
+            <label class="faq-question" for="q5">Are paintings framed?</label>
+        <div class="faq-answer">Most paintings are sold framed, but unframed and custom framing options are also available.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q6">
+            <label class="faq-question" for="q6">Can I return a painting?</label>
+        <div class="faq-answer">Yes, returns are accepted within 14 days if the artwork is in its original condition.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q7">
+            <label class="faq-question" for="q7">Do you provide certificates of authenticity?</label>
+        <div class="faq-answer">Yes, every painting comes with a certificate of authenticity signed by the artist or museum staff.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q8">
+            <label class="faq-question" for="q8">How often is the collection updated?</label>
+        <div class="faq-answer">Our collection is updated regularly with new arrivals and seasonal exhibitions.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q9">
+            <label class="faq-question" for="q9">Can I commission a custom painting?</label>
+        <div class="faq-answer">Yes, we accept custom commissions through selected artists. Contact us for details.</div>
+        </div>
+
+
+        <div class="faq-item">
+            <input type="checkbox" id="q10">
+            <label class="faq-question" for="q10">Do you offer virtual tours?</label>
+        <div class="faq-answer">Yes, we provide an interactive virtual tour of our collection through our website.</div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>

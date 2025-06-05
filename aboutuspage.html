@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto' , sans-serif;
+             background-color: #080808;
+            color: white;
+        }
+         .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             border-radius: 25px;
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .heading{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .heading h1{
+            font-family: 'Playfair Display',serif;
+            top: 30px;
+            font-size: 50px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+        .heading h1::after{
+            content: "";
+            position:absolute;
+            width: 100%;
+            height: 4px;
+            display: block;
+            margin: 0 auto;
+            background-color: rgb(93, 91, 91);
+        }
+        .heading p{
+            font-size: 18px;
+            color: darkgrey;
+            margin-bottom: 35px;
+        }
+        .container{
+            width: 90%;
+            margin: 0 auto;
+            padding: 10px 20px;
+
+        }
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .about-image{
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+           box-shadow: 2px 10px 20px 2px rgb(109, 80, 8);
+           border-radius: 8px;
+        }
+        .about-image img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.5s ease;
+          
+        }
+         .about-image:hover img{
+transform: scale(1.2);
+  
+         }
+        .about-contant{
+            flex: 1;
+        }
+        .about-contant h2{
+              font-family: 'Playfair Display',serif;
+            font-size: 23px;
+            margin-bottom: 15px;
+        }
+        .about-contant p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: darkgrey;
+        }
+        .about-contant .more{
+            display: inline-block;
+            padding: 10px 20px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(87, 87, 87);
+            font-size: 19px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 15px;
+            transition: 0.3s ease;
+        }
+        .about-contant .more:hover{
+            background-color:rgb(129, 101, 6);
+        }
+     
+        
+    </style>
+</head>
+<body>
+<div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="contactuspage.html"> Contact Us</a>
+                             <a href="homepage.html"> Home </a>
+                             <a href="servicespage.html"> Services</a>
+                             <a href="gellary.html"> Gellary</a>
+                              <a href="FAQ.html"> FAQ</a>
+                             <a href="blogpage.html"> Blog</a>
+                             <a href="caseStudies.html"> Case Studies</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>Welcome to our museum — your digital destination for fine art lovers.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="imag3.png">
+            </div>
+            <div class="about-contant">
+                <h2>What Is The Art Haven Museum ?</h2>
+                <p>We are a specialized platform dedicated to showcasing and selling carefully curated artworks created by talented artists from various backgrounds and styles. We believe that art is more than decoration — it is a message, a feeling, and a story told through every color and detail.
+<br>
+Our mission is to connect art enthusiasts and collectors with authentic pieces that bring beauty and spirit to every space. While we don’t create the artworks ourselves, we proudly offer them a space to be discovered, appreciated, and owned.
+<br>
+At our museum, we strive to provide a smooth, trustworthy, and inspiring experience for everyone looking to add meaningful art to their lives.
+</p>
+<a href="servicespage.html" class="more">Explore Our Museum</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

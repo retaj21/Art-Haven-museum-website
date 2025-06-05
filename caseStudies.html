@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+     <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #080808;
+      color: #eee;
+    }
+       .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+    
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 90px 0;
+    }
+
+    .section-title {
+        font-family: 'Playfair Display',serif;
+      color: rgb(255, 255, 255);
+      font-size: 32px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: #1a1a1a;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+       box-shadow: 0 0 10px rgb(135, 98, 4);
+       transition: 0.5s ease;
+    }
+    .card:hover{
+        transform:scale(1.05) ;
+    }
+  
+
+    .card img {
+      width: 50%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 20px;
+      width: 50%;
+    }
+
+    .card-content h3 {
+       font-family: 'Playfair Display',serif;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      margin-bottom: 10px;
+       text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+          font-weight: 500;
+    }
+
+    .card-content p {
+      line-height: 1.6;
+      color: #939393;
+    }
+
+   
+  </style>
+
+</head>
+<body>
+     <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="aboutuspage.html"> About Us</a>
+                             <a href="homepage.html"> Home </a>
+                             <a href="servicespage.html"> Services</a>
+                             <a href="gellary.html"> Gellary</a>
+                              <a href="FAQ.html"> FAQ</a>
+                             <a href="blogpage.html"> Blog</a>
+                             <a href="contactuspage.html"> Contact US</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+     <div class="container">
+    <div class="section-title"><h3>Case Studies</h3></div>
+
+    <div class="card">
+      <img src="image9.jpg" >
+      <div class="card-content">
+        <h3>The Night Watch – Rembrandt</h3>
+        <p>Painted in 1642 by Dutch master Rembrandt van Rijn, The Night Watch stands as one of the most
+             celebrated masterpieces of the Baroque era. Unlike traditional group portraits of the time, Rembrandt brought movement, drama, and narrative to the composition.
+              The scene depicts a city militia in a dynamic moment, with the captain and his lieutenant leading their men. The masterful use of chiaroscuro—strong contrasts between
+             light and dark—guides the viewer’s gaze across the canvas and adds emotional depth. Its rich, dark tones and golden highlights perfectly 
+            align with the luxurious black-and-gold aesthetic of your project.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image10.jpg" >
+      <div class="card-content">
+        <h3>The Persistence of Memory – Salvador Dalí</h3>
+        <p>A surrealist icon, The Persistence of Memory (1931) by Salvador Dalí presents a dreamlike landscape in 
+            which soft, melting clocks hang limply across a barren plain. The painting explores themes of time, 
+            decay, and the subconscious mind. Its earthy browns, golden highlights, and shadowed tones give it 
+            a mysterious, almost philosophical aura. This work speaks to those fascinated by the fluidity of reality,
+             and its strange yet elegant aesthetic makes it an excellent centerpiece in a moody, dark-toned digital gallery.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image11.jpg">
+      <div class="card-content">
+        <h3>The Kiss – Gustav Klimt</h3>
+        <p>Painted between 1907 and 1908, The Kiss is the most iconic work of Austrian artist Gustav Klimt.
+             With its radiant gold leaf and intricate patterns, the painting portrays an intimate moment
+              between two lovers wrapped in a golden cloak. Klimt’s fusion of symbolism, sensuality, and 
+              luxurious detail makes this piece shimmer with elegance. Its golden brilliance juxtaposed against
+               dark backgrounds harmonizes beautifully with a black-and-gold-themed website or gallery, adding 
+               romantic allure and opulence.
+</p>
+      </div>
+    </div>
+
+     <div class="card">
+      <img src="image12.jpg">
+      <div class="card-content">
+        <h3>Ophelia – John Everett Millais</h3>
+        <p>Painted in 1851, Ophelia depicts the tragic heroine from Shakespeare’s Hamlet floating in a
+             river, moments after drowning. Surrounded by meticulously painted flowers and natural
+              details, the painting is both haunting and serene. Its rich, earthy tones and emotional 
+              depth align beautifully with dark-themed exhibits that aim to tell poetic, melancholic stories.
+
+</p>
+      </div>
+    </div>
+
+     <div class="card">
+      <img src="image13.jpg">
+      <div class="card-content">
+        <h3>Nocturne in Black and Gold – James Whistler</h3>
+        <p>A bold experiment in mood and abstraction, this 1875 painting by James Whistler depicts
+             fireworks over a nighttime park using minimal, expressive brushstrokes. The interplay 
+             between deep black and shimmering gold creates a dreamlike, almost musical atmosphere.
+              It’s a perfect visual metaphor for elegance, silence, and spectacle—ideal for a sophisticated 
+              digital art space.</p>
+      </div>
+    </div>
+
+  </div>
+ 
+
+  
+
+
+</body>
+</html>

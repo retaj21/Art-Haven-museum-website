@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #080808; 
+      color: white;
+    }
+     .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+             text-shadow: -1px -1px 0 rgb(0, 0, 0),
+         1px -1px 0  rgb(0, 0, 0),
+        -1px  1px 0  rgb(0, 0, 0),
+         1px  1px 0  rgb(0, 0, 0);
+   
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+    
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+       background-color:#1a1a1a;
+      border-bottom: 2px solid #444;
+    }
+    h1 {
+        margin-top: 5rem;
+      color: #ffffff; 
+      font-size: 2.5rem;
+      font-family: 'Playfair Display',serif;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .artwork {
+      background-color: #1a1a1a;
+      border-radius: 12px;
+      overflow: hidden;
+    
+      transition: 0.3s;
+    }
+    .artwork:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px 5px rgba(212, 175,55,0.4);
+                    
+
+    }
+    .artwork img {
+        border: 6px solid #000000;
+        padding: 4px;
+        background: color #161616;;
+      height: 250px;
+     
+      width: 100%;
+   
+      object-fit: cover;
+      box-sizing: border-box;
+    }
+    .title {
+        font-family: Georgia, serif;
+      padding: 1rem;
+      font-size: 1.2rem;
+      text-align: center;
+      color: rgba(212, 175,55,0.4);
+    }
+  </style>
+
+<body>
+  <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="aboutuspage.html"> About Us</a>
+                             <a href="homepage.html"> Home </a>
+                             <a href="servicespage.html"> Services</a>
+                             <a href="contactuspage.html"> Contact Us</a>
+                              <a href="FAQ.html"> FAQ</a>
+                             <a href="blogpage.html"> Blog</a>
+                             <a href="caseStudies.html"> Case Studies</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+    <header>
+  <h1>Art Gallery</h1>
+</header>
+
+<div class="gallery">
+  <div class="artwork">
+    <img src="compositionVII-wassilly.jpg">
+    <div class="title">Composition VII – Wassily Kandinsky</div>
+  </div>
+
+   <div class="artwork">
+    <img src="The Treachery of Images – René Magritte.jpg">
+    <div class="title">The Treachery of Images – René Magritte</div>
+  </div>
+
+   <div class="artwork">
+    <img src="The Lovers II – René Magritte.jpg">
+    <div class="title">The Lovers II – René Magritte</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Portrait of Adele Bloch-Bauer I – Gustav Klimt.jpg">
+    <div class="title">Portrait of Adele Bloch-Bauer I – Gustav Klimt</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Blue Dancers – Edgar Degas.jpg">
+    <div class="title">Blue Dancers – Edgar Degas</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Starry Night Over the Rhône – Vincent van Go.jpg">
+    <div class="title"> Starry Night Over the Rhône – Vincent van Gogh</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The Sleeping Gypsy – Henri Rousseau.jpg">
+    <div class="title">The Sleeping Gypsy – Henri Rousseau</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Broadway Boogie Woogie – Piet Mondrian.jpg">
+    <div class="title">Broadway Boogie Woogie – Piet Mondrian</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Untitled (Black on Gray) – Mark Rothk.jpg">
+    <div class="title"> Untitled (Black on Gray) – Mark Rothko</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The Dream – Henri Rousseau.jpg">
+    <div class="title">The Dream – Henri Rousseau</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Infinity Mirrored Room – Yayoi Kusama.jpg">
+    <div class="title">Infinity Mirrored Room – Yayoi Kusama</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Saturn Devouring His Son – Francisco Goya.jpg">
+    <div class="title">Saturn Devouring His Son – Francisco Goya</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The Old Guitarist – Pablo Picass.jpg">
+    <div class="title">The Old Guitarist – Pablo Picasso</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Girl Before a Mirror – Pablo Picasso.jpg">
+    <div class="title"> Girl Before a Mirror – Pablo Picasso</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The Broken Column – Frida Kahlo.jpg">
+    <div class="title">The Broken Column – Frida Kahlo</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The False Mirror – René Magritte.jpg">
+    <div class="title">The False Mirror – René Magritte</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Woman with a Parasol – Claude Monet.jpg">
+    <div class="title"> Woman with a Parasol – Claude Monet</div>
+  </div>
+
+  <div class="artwork">
+    <img src="Self-Portrait with Thorn Necklace and Hummingbird – Frida Kahlo.jpg">
+    <div class="title">Self-Portrait with Thorn Necklace and Hummingbird – Frida Kahlo</div>
+  </div>
+
+  <div class="artwork">
+    <img src="No. 5, 1948 – Jackson Pollock.jpg">
+    <div class="title">No. 5, 1948 – Jackson Pollock</div>
+  </div>
+
+  <div class="artwork">
+    <img src="The Black Square – Kazimir Malevich.jpg">
+    <div class="title">The Black Square – Kazimir Malevich</div>
+  </div>
+
+  
+  
+</div>
+
+</body>
+</html>
