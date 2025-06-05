@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        body {
+            background-image: url("image1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: -1;
+        }
+
+        .wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: calc(150vh - 70px);
+        }
+
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            z-index: 2;
+        }
+
+        .left, .right {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .left ul, .right ul {
+            list-style: none;
+            padding: 1em 3em;
+        }
+
+        .left ul li, .right ul li {
+            display: inline-block;
+        }
+
+        .left ul li a, .right ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+            text-shadow: 0 0 3px black;
+        }
+
+        .left a:hover, .right a:hover {
+            color: goldenrod;
+        }
+
+        .banner {
+            position: relative;
+            top: 80px;
+            text-align: center;
+            font-size: 20px;
+            color: rgba(212, 175, 55, 0.5);
+            text-shadow: 1px 1px 2px black;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0 }
+            to { opacity: 1 }
+        }
+
+        .info {
+            padding: 50px 20px;
+            margin: 120px auto 100px auto;
+            text-align: center;
+            color: white;
+        }
+
+        .info h1, .info h2 {
+            font-family: 'Playfair Display', serif;
+            text-shadow: 2px 2px 4px black;
+            opacity: 0;
+            animation: fadeInUp 1.2s ease forwards;
+        }
+
+        .info h2 {
+            animation-delay: 0.4s;
+        }
+
+        .info p {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #f1f1f1;
+            text-shadow: 1px 1px 3px black;
+            opacity: 0;
+            animation: fadeInUp 1.2s ease forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .info a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: rgb(48, 48, 48);
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            text-shadow: 2px 2px 4px black;
+            border-radius: 25px;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        .info a::after {
+            content: " →";
+            position: absolute;
+            right: -20px;
+            transition: right 0.3s;
+        }
+
+        .info a:hover {
+            background-color:  rgb(107, 88, 26);
+        }
+
+        .info a:hover::after {
+            right: 10px;
+        }
+
+        .footer {
+            background-color: #3f3f3e;
+            color: #f5f5f5;
+            padding: 2px 10px 20px;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .footer-section {
+            font-size: 18px;
+            flex: 1;
+            margin: 15px;
+            min-width: 200px;
+        }
+
+        .footer-section h3 {
+            color:  rgb(107, 88, 26);
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            font-size: 14px;
+            color: #f5f5f5;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            transition: color 0.3s;
+        }
+
+        .footer-section p {
+            font-size: 14px;
+        }
+
+        .footer-section ul li a:hover {
+            color: goldenrod;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #666;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <ul>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="contactuspage.html">Contact Us</a></li>
+                <li><a href="servicespage.html">Services</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="blogpage.html">Blog</a></li>
+                <li><a href="caseStudies.html">Case Studies</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="loginpage.html">Log in</a></li>
+                <li><a href="signuppage.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="banner">Explore. Feel. Collect Art.</div>
+
+        <div class="info">
+            <h1>Welcome To Art Haven Museum</h1>
+            <h2>From here, the doors of art swing wide open to take you where inspiration lives.</h2>
+            <p>"At Art Haven, your journey goes far beyond simply purchasing a painting — it becomes a unique experience where you discover the spirit of creativity in every brushstroke, every color, every shadow. We believe art is not just decoration for your walls, but a story to be told, a feeling to be touched, and a world of beauty waiting to be explored. Let us guide you through a gallery of thoughtfully curated pieces, where each artwork carries the imprint of an artist and a message waiting for someone to understand it — and give it a place in their heart and home."</p>
+            <a href="gellary.html">Start Your Journey</a>
+        </div>
+<footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="aboutuspage.html">About Us</a></li>
+                        <li><a href="contactuspage.html">Contact Us</a></li>
+                        <li><a href="servicespage.html">Services</a></li>
+                        <li><a href="FAQ.html">FAQ</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="caseStudies.html">Case Studies</a></li>
+                         <li><a href="gellary.html">Gellary</a></li>
+                  
+                        </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@arthaven.com</p>
+                    <p>Phone: +123 456 789</p>
+                    <p>Location: Art District, Downtown</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p>Instagram | Facebook | Twitter</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Art Haven Museum. All rights reserved.
+            </div>
+        </footer>
+        
+    </div>
+
+</body>
+</html>
