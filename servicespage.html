@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+   <style>
+     .nav{
+            position: fixed;
+            top: 0;
+            padding: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+        }
+        .left{
+            float: left;
+        }
+        .left ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .left ul li{
+            display: inline-block;
+        }
+        .left ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+        }
+           .left a:hover{
+            color: rgb(175, 132, 24);
+        }
+        .right{
+            float: right;
+        }
+           .right ul{
+list-style: none;
+  padding: 1em 3em;
+        }
+        .right ul li{
+            display: inline-block;
+        }
+        .right ul li a{
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 8px 16px;
+        }
+        .right a:hover{
+            color: rgb(175, 132, 24);
+        }
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      background-color: #080808;
+
+    }
+    .our-services{
+        margin-top: 100px;
+    }
+    .our-services h1{
+        font-family: 'Playfair Display',serif;
+        text-transform: uppercase;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 40px;
+        color: white ;
+    }
+    .container{
+        width: 80%;
+        margin:0px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .service{
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        min-height: 550px;
+        color:  white;
+        text-align: center;
+        margin: 20px;
+        background-color:black;
+        padding: 25px 25px;
+        cursor: pointer;
+        border: 1px solid white;
+
+    }
+    .service:hover{
+        background-color:#2e2d2d;
+    }
+   
+.service p{
+    font-size: 16px;
+    color: #7b7b7b;
+    line-height: 1.4;
+}
+.service h2{
+      font-family: 'Playfair Display',serif;
+}
+ .about-image{
+   
+            flex: 1;
+            margin-right: 40px;
+            overflow: hidden;
+           box-shadow: 2px 10px 20px 2px rgb(109, 80, 8);
+           border-radius: 8px;
+        }
+        .about-image img{
+            position: center;
+           height: 400px;
+           width: 100%;
+           object-fit: cover;
+            display: block;
+            transition: 0.5s ease;
+          
+        }
+         .about-image:hover img{
+transform: scale(1.2);
+         }
+       
+     
+   </style>
+</head>
+<body>
+      <div class="nav">
+            <div class="left">
+                <ul>
+                    <li>
+                             <a href="aboutuspage.html"> About Us</a>
+                             <a href="index.html"> Home </a>
+                             <a href="contactuspage.html"> Contact Us</a>
+                             <a href="gellary.html"> Gellary</a>
+                              <a href="FAQ.html"> FAQ</a>
+                             <a href="blogpage.html"> Blog</a>
+                             <a href="caseStudies.html"> Case Studies</a>
+                     </li>
+                </ul>
+            </div>
+           <div class="right">
+                <ul>
+                    <li>
+                             <a href="loginpage.html"> Log in </a>
+                             <a href="signuppage.html"> Sign up </a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+    <div class="our-services">
+        <h1>Our Services</h1>
+        <div class="container">
+            <div class="service">
+                <div class="about-image">
+                <img src="image5.jpg">
+            </div>
+                <h2>Reviving Artworks</h2>
+                <p>We offer a professional service to repair damaged or worn-out artworks, while preserving their beauty and authenticity.
+                   Whether it's scratches, cracks, or faded colors, our specialized team carefully restores each piece with precision and 
+                   attention to detail.</p>
+
+            </div>
+
+             <div class="service">
+                 <div class="about-image">
+                <img src="image6.jpg">
+            </div>
+                <i class="fas fa-laptop"></i>
+                <h2>Own a Work of Art</h2>
+                <p>Explore our curated collection of original artworks, tailored to suit a variety of tastes and styles. Purchase your
+                    favorite piece easily through our website, with guaranteed quality and safe delivery.</p>
+            </div>
+
+
+             <div class="service">
+                 <div class="about-image">
+                <img src="image7.jpg">
+            </div>
+                
+                <h2>An Elegant Final Touch</h2>
+                <p>We believe the right frame can completely transform a painting! That’s why we help you choose or design a frame that 
+                    matches your artwork’s style and enhances its beauty—whether for personal use or display.</p>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
